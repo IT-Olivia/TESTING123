@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./src/styles.css">
+
+    <title>Mole Mash</title>
+  </head>
+
+  <body>
+    
+    <h1 id="title">Mole Mash</h1> <!--Name of game-->
+    <h1 id="score">0</h1>
+
+    <div class="controls">    
+      <button id="startButton" class="start-button">Start</button> 
+  </div>
+
+    <h1><span id="timer">0</span> seconds left.</h1> <!--Shows timer-->
+    <h2>Click start to play!</h2> <!--Instructions on how to begin game-->
+    <div>
+      
+    </div>
+    <div class="difficulty"> <!--Select difficulty level-->
+      <div>
+        <input type="radio" name="level" id="easy"> <!--Difficulty level easy-->
+        <label for="easy">Easy</label>
+      </div>
+      <div>
+        <input type="radio" name="level" id="normal"> <!--Difficulty level normal-->
+        <label for="normal">Normal</label>
+      </div>
+      <div>
+        <input type="radio" name="level" id="hard" checked> <!--Difficulty level defaulted to hard-->
+        <label for="hard">Hard</label>
+      </div>
+    </div>
+        
+   
+
+  </div>  
+  <div class="grid"> <!--Game background-->
+    <div id="hole0" class="hole show">
+  <img src="assets\hole.png" alt="Hole"> <!--Hole-->
+      <div id="mole0" class="mole"></div> <!--Mole-->
+    </div>
+    <div id="hole1" class="hole show"> <!--Hole-->
+  <img src="assets\hole.png" alt="Hole"> <!--Hole image-->
+      <div id="mole1" class="mole"></div> <!--Mole-->
+    </div>
+      <!--TODO: Add the missing holes and moles. -->
+      <div id="hole2" class="hole show"><!--Hole-->
+  <img src="assets\hole.png" alt="Hole"><!--Hole image-->
+     <div id="mole2" class="mole"></div> <!--Mole-->
+    </div>
+    
+    <div id="hole3" class="hole show"><!--Hole-->
+  <img src="assets\hole.png" alt="Hole"><!--Hole image-->
+        <div id="mole3" class="mole"></div>  <!--Mole-->
+    </div> 
+    <div id="hole4" class="hole show"> <!--Hole-->
+  <img src="assets\hole.png" alt="Hole"><!--Hole image-->
+        <div id="mole4" class="mole"></div> <!--Mole hole-->
+    </div>
+    <div id="hole5" class="hole show"> <!--Hole-->
+  <img src="assets\hole.png" alt="Hole"> <!--Hole image-->
+      <div id="mole5" class="mole"></div> <!--Mole-->
+    </div>
+    <div id="hole6" class="hole show"> <!--Hole-->
+  <img src="assets\hole.png" alt="Hole"> <!--Hole image-->
+        <div id="mole6" class="mole"></div> <!--Mole-->
+    </div>
+    <div id="hole7" class="hole show">  <!--Hole-->
+  <img src="assets\hole.png" alt="Hole"><!--Hole image-->
+        <div id="mole7" class="mole"></div> <!--Mole-->
+    </div>
+    <div id="hole8" class="hole show">  <!--Hole-->
+  <img src="assets\hole.png" alt="Hole"><!--Hole image-->
+        <div id="mole8" class="mole"></div> <!--Mole-->
+    </div>
+  </div>
+    
+  window.addEventListener("mousemove", (e) => {
+    cursor.style.top = `${e.pageY}px`;
+  }); 
+    <script src="./src/index.js"></script>
+  </body>
+</html>
